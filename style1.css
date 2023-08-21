@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+    cursor:pointer;
+}
+/* container */
+#container{
+    width:100%;
+    height:100vh;
+}
+/* header*/
+#header{
+    width:100%;
+    padding:0px 30px;
+    margin-top:33px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#header .logo>img{
+    width: 100px;
+    height: auto;
+}
+#menu {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+#menu>.item>a{
+    position: relative;
+}
+#menu> .item>a::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #626A67;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.2s;
+}
+#menu>.item:hover>a::before{
+    width: 100%;
+}
+#menu .item{
+    margin: 0px 25px;
+}
+#menu .item>a{
+    text-decoration: none;
+    color:#626A67
+}
+#header .action>a>i{
+    font-size: 30px;
+    padding: 0px 10px;
+}
+/*main body*/
+#body{
+    background-image: url('./image/fast-food.jpg');
+    width: 100%;
+    height:463px;
+    margin-top: 40px;
+    display: flex;
+    padding: 0px 133px;
+    position: relative;
+}
+#body .box-left, #body .box-right{
+    width: 50%;
+}
+#body .box-left h2{
+    font-size:48px;
+    margin-top: 75px;
+    color:#fff;
+}
+#body .box-left p{
+    color: #d0d0d0;
+}
+#body .box-left button{
+    width: 199px;
+    height:40px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 41px;
+    color: #fff;
+    background:#1d1a1a;
+    transition: 0.4s;
+    border: 0;
+    outline: none;
+}
+#body .box-left button:hover{
+    background: orangered;
+}
+#body .box-right img{
+    width:50%;
+    height: 50%;
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
+    border-radius: 10px;
+}
+#body .box-right{
+    padding-left: 200px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#body .box-right img:nth-child(1){
+    animation-delay:0.5s;
+}
+#body .box-right img:nth-child(2){
+    animation-delay:1s;
+}
+@keyframes animation{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+#to_buttom{
+    position:absolute;
+    bottom:-40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+}
+/*foooter*/
+#footer{
+    padding-top:116px;
+    padding-left: 134px;
+    padding-right: 134px;
+    padding-bottom: 78px;
+}
+#footer .product-list img{
+    display: block;
+    width: 80%;
+    height: 60%;
+    margin: 15px auto;
+    border-radius: 10px;
+
+}
+#footer h2{
+    text-align: center;
+    color: #626A67;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+#footer .product-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer .product-list .item{
+    width: 200px;
+    height: 390px;
+    background: #362f2f;
+    border-radius: 10px;
+    text-align: center;
+}
+#footer .product-list .start>span{
+    padding: 0px 4px;
+}
+#footer .product-list .name{
+    color: #fff;
+    padding-top: 15px;
+    font-weight: bold;
+}
+#footer .product-list .despric{
+    color: #626A67;
+}
+#footer .product-list .price{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#footer .product-list a>button{
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background:#1d1a1a;
+    color: #fff;
+    font-weight: bold;
+    width: 40%;
+    height: 4%;
+    transition: 0.2s;
+    animation: animation 3s infinite linear;
+}
+#footer .product-list a:hover>button{
+    background: orangered;
+}
+/*list item*/
+#list{
+    display: flex;
+    list-style: none;
+    width:50%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+#list .item1{
+    margin: 0px 24px;
+    width: 35px;
+    height: 35px;
+    background: #362f2f;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+#list .item1:hover{
+    background: #9f6e6e;
+}
+#list .item1 a{
+    color: #fff;
+    text-decoration: none;
+}
+/*sasoel*/
+#sansoel{
+    display: flex;
+    width: 100%;
+    height: 322px;
+}
+#sansoel .box-left, #sansoel .box-right{
+    width: 50%;
+}
+#sansoel .box-left{
+    background: #362f2f;
+    text-align: center;
+    min-height: 322px;
+}
+#sansoel .box-left h2{
+    margin-top: 50px;
+}
+#sansoel .box-left h2>span:nth-child(1){
+    font-size: 50px;
+    color: #fff;
+}
+#sansoel .box-left h2>span:nth-child(2){
+    font-size: 128px;
+    color:orange;
+}
+#sansoel .box-right{
+    background-image: url('./image/chup-anh-thuc-an-1.jpg');
+    background-size: 100%;
+    background-position-y: -42px;
+}
+/*coment*/ 
+.avata img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 45px;
+}
+#coment{
+    width: 1012px;
+    height: 478px;
+    margin: 0px auto;
+    margin-top: 184px;
+    margin-bottom: 50px;
+}
+#coment h2{
+    text-align: center;
+    color: #626A67;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#comment-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+    
+}
+/*lướt*/
+#comment-body .pare{
+    width: 35px;
+    height:35px;
+    background: #d0dcd8;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 50%;
+}
+#comment-body .pare1{
+    width: 35px;
+    height:35px;
+    background: #d0dcd8;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 50%;
+}
+#list-comment{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition: 0.2s;
+}
+#list-comment .item2{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #362f2f;
+}
+#list-comment .avata{
+    width:50%;
+    margin: 0px auto;
+    text-align: center;
+}
+#list-comment .name{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+#list-comment .star{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+#list-comment .star>span{
+    padding: 0px 10px ;
+}
+
+#list-comment .text{
+    padding: 20px 50px;
+    color: #fff;
+    margin-top: 30px;
+}
+/*css for product*/
+#product {
+    width:100%;
+    background: #c2b1b1;
+}
+#product .list-product{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+}
+#product .list-product .item1{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+    background-color: #626A67;
+    height: 300px;
+    border-radius: 10px;
+}
+#product>h1{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 0px;
+}
+#product .list-product .item1>img{
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+}
+#product .list-product a>button{
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background:#1d1a1a;
+    color: #fff;
+    font-weight: bold;
+    width: 50%;
+    height: 10%;
+    transition: 0.2s;
+}
+#product .list-product a:hover>button{
+    background: orangered;
+}
+
+/*footerend*/
+#footerend{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+#footerend .list-end{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+}
+#footerend .list-end>.menu{
+    display:grid;
+}
+#footerend .menu>span>a{
+    text-decoration: none;
+    color: #626A67;
+}
+#footerend .menu>span>a:hover{
+    color: #af2b2b;
+}
+#footerend .menu input{
+    height: 30px;
+}
+#footerend .menu button{
+    height: 20px;
+}
+/*eys*/
+.menu #eyes{
+    position: relative;
+}
+#eys{
+    position:absolute;
+    top: 7%;
+    right: 10px;
+}
+#eyes.error>small{
+    position:absolute;
+    bottom:15px;
+    left:10px;
+    color:rgb(222, 47, 47);
+}
